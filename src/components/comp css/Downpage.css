@@ -1,0 +1,57 @@
+.Down-container
+{
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'texttight';
+    padding: 1rem;
+    background-image: url('../../images/content-page-curl.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50px;
+    padding-bottom: 2rem;
+    display: flex;
+    position: relative;
+}
+.Down-cont
+{
+    height: 260px !important;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+.d-circle,.circle-timer
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.d-c-c, .circle
+{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #f3b000;
+}
+.d-c-c h1
+{
+    font-family: 'comic';
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 3px 0 red;
+}
+.circle.tick 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 5rem;
+}

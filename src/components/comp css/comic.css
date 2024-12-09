@@ -1,0 +1,164 @@
+.comic-container
+{
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    font-family: 'regular';
+    padding: 1rem;
+    background-image: url('../../images/content-page-curl.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50px;
+}
+.comic-container h1{
+    margin: 0;
+    font-family: 'comic';
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
+    padding:0 1rem;
+    text-shadow: 2px 3px 0 red;
+}
+.comic-section
+{
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.book
+{
+    width: 230px;
+    height: 290px;
+    position: relative;
+    margin:25px 0;
+    box-shadow: 0px 0px 5px black;
+}
+
+.gloss{
+    position: absolute;
+    top:0;
+    z-index:200;
+    overflow: hidden;
+    width:20%;
+    height:100%;
+    opacity:0.5;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.3), rgba(255,255,255,0));
+    transition:all .5s;
+    transform: translateX(-50%) rotateY(0deg);
+    transform-origin: left center;
+  }
+  .book:hover
+  {
+    cursor: pointer;
+  }
+.book .cover
+{
+    width: 230px;
+    height: 290px;
+    transition:transform .5s;
+    transform: translateX(0);
+    transform-origin: left center;
+    backface-visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}   
+.book:hover .cover{
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(-80deg);
+}
+.book:hover .gloss {
+    transform: perspective(1000px) rotateY(-80deg) translateX(100%) scaleX(3);
+}
+.no-link:hover .cover {
+  transform: none !important;
+}
+.no-link:hover .gloss{
+    transform: none translateX(0);
+}
+.book .description
+{
+    position: absolute;
+    background-color: #0b0b0b;
+    top:0;
+    right: 0;
+    width: 78%;
+    height: 100%;
+    color: white;
+    font-family: 'textregular';
+    overflow: hidden;
+    z-index: 0;
+}
+.book .description h4{
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
+}
+.des-content
+{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.des-content .comic-btn
+{
+    
+    border: none;
+    outline: none;
+    font-family: 'textregular';
+    font-size: 1.2rem;
+    color: red;
+    text-decoration: none;
+    cursor:pointer;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    text-align: right;
+    padding-right: 1rem;
+}
+.comic-btn span:hover{
+    color: blue;
+}
+.book .description .des-content p
+{
+    margin: 0;
+    text-align:left ;
+    padding: 0.5rem;
+   
+}
+.comic-info
+{
+    /* background-color: #0b0b0b; */
+    background-image: url('../../images/widget-curl.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 0.5rem;
+    width: 100%;
+    text-align: left
+}
+.pageedge
+{
+    position: relative;
+}
+.recent-com
+{
+    margin-top: 1rem;
+}
+@media screen and (max-width:780px) 
+{
+    .comic-container h1
+    {
+        text-align: center;
+    }    
+}

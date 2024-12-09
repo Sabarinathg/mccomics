@@ -1,0 +1,56 @@
+.Loadingpage-container
+{
+    background-color: red;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.load-contnent img
+{
+    width: 150px;
+}
+:root {
+    --colour1: white;
+    --colour2: #f3b000;
+    --speed: 1s;
+    --patternRepeatWidth: 60;
+    --stripeWidth: calc(var(--patternRepeatWidth) * 1px);
+    --fundamentalBase: calc(1px * sqrt(2 * pow(var(--patternRepeatWidth), 2)));
+  }
+  
+@keyframes slide {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: var(--fundamentalBase);
+    }
+  }
+  
+.bar {
+    min-height: 15px;
+    border-radius: 10px;
+   
+    width: calc(var(--fundamentalBase) * 4);
+    @media only screen and (max-width: 450px) {
+      width: calc(var(--fundamentalBase) * 3);
+    }
+    @media only screen and (max-width: 350px) {
+      width: calc(var(--fundamentalBase) * 2);
+    }
+    box-shadow: 0px 10px 13px -6px rgba(44, 62, 80, 1);
+    background-color: var(--colour2);
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent calc(var(--stripeWidth) / 2),
+      var(--colour1) calc(var(--stripeWidth) / 2),
+      var(--colour1) var(--stripeWidth)
+    );
+
+    animation: slide var(--speed) linear infinite;
+    will-change: background-position;
+  }

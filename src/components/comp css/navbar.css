@@ -1,0 +1,133 @@
+.nav-container {
+    margin-right: 2rem;
+    padding: 0;
+    font-family: 'textitalic';
+}
+.nav-list {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+
+.nav-list li {
+    color: white;
+    padding: 0 0.2rem;
+    font-size: 1rem;
+    margin: 0 8px;
+    height: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 17px;
+    border-bottom: 30px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.nav-list li:hover,
+.nav-list .active {
+    border-bottom: 30px solid #f3b000;
+}
+
+.nav-list li .lnk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    text-decoration: none;
+    color: white;
+    padding:0 1rem ;
+}
+.vertical-nav
+{
+    display: none;
+}
+.vertical-indi
+{
+    display: none;
+}
+@media screen and (max-width:780px) 
+{
+    .nav-list {
+        display: none;
+    }
+    .nav-container.visible {
+        transform: translate(0);
+    }
+    .nav-container {
+        margin: 0;
+        padding: 0;
+        position:fixed;
+        z-index: 999;
+        height: 100vh;
+        width:100;
+        display: flex;
+        align-items: center;
+        transform: translate(-80%);
+        transition: .3s ease-in-out;
+    }
+    .vertical-nav
+    {
+        display:contents;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 50px;
+        height: 100%;
+        background-color: black;
+        z-index: 5;
+    }
+    .vertical-nav li 
+    {
+        padding:0;
+        text-align: center;
+        margin: 0.7rem 0;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .vertical-nav li:hover,
+    .vertical-nav .active {
+        background-color: #f3b000;
+    }
+    .vertical-nav li i 
+    {
+        color: white;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+    }
+    .vertical-nav li img
+    {
+        width:35px;
+    }
+    .vertical-indi
+    {
+        display:block;
+        padding: 0;
+        font-size:1rem;
+        width: 0;
+        border-bottom-right-radius: 5px !important;
+        border-top-right-radius: 17px;
+        border-left: 30px solid #f3b000;
+        border-top: 10px solid transparent;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+    .vertical-indi span
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+        margin-left: -26px;
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem 0;
+        letter-spacing: -0.3rem;
+        margin-bottom: 0.4rem;
+    }
+}

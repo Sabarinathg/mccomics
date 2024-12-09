@@ -1,0 +1,180 @@
+.sidebar-container
+{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url('../../images/bg-footer\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sidebar-content
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap:wrap !important;
+}
+.sidebar-content h2
+{
+    font-family:'regular';
+    font-weight: 100;
+    color: #e6a600;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 10px;
+    padding:0.5rem;
+}
+.sidebar-content .category,.archive
+{
+    width: 240px;
+    height: 100%;
+}
+.sidebar-content .category ul,.archive ul
+{
+    background-color: rgba(26,26,26,0.5);
+    margin-top: 0;
+    padding: 1rem;
+    list-style: none;
+    width: 100%;
+    height: 310px;
+    border-radius: 5px;
+    border: 1px solid #252525;
+    background-image: url('../../images/widget-curl.jpg');
+    background-size:35px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.sidebar-content .category ul li,.archive ul li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family:'texttight';
+    font-size: 1.1rem;
+}
+.sidebar-content .category ul li img,.archive ul li img{
+    margin-right: 10px;
+    visibility: hidden;
+}
+.sidebar-content .category ul li:hover,.archive ul li:hover{
+    visibility: visible;
+    color:red;
+}
+.sidebar-content .category ul li:hover img,.archive ul li:hover img{
+    visibility: visible;
+}
+.sidebar-content .posttabs
+{
+    width: 48%;
+    height: 100%;
+}
+.posttabs .tabs
+{
+    display: flex;
+}
+.posttabs .tabs button
+{
+    background-color:transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+.tabs button h2
+{
+    color: #252525;  
+}
+.tabs button.active h2 
+{
+    color:#e6a600;
+}
+.tabs button img{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom:0;
+    display: none;
+}
+.tabs button.active img
+{
+    display: inline;
+}
+.posttabs .tab-content
+{
+    background-color: #1a1a1a80;
+    margin-top: 0;
+    padding:1rem !important;
+    list-style: none;
+    width: 100%;
+    height: 310px;
+    border-radius: 5px;
+    border: 1px solid #252525;
+    background-image: url('../../images/widget-curl.jpg');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    overflow: hidden;
+}
+.tab-content .content-list
+{
+    margin-top: 0;
+    width: 100%;
+}
+.tab-content .content-list ul{
+    margin: 0 !important;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+.tab-content .content-list ul li
+{ 
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content-list ul li:hover
+{
+    background-color: #000;
+}
+.content-list ul li:hover h6
+{
+    color: #e6a600;
+}
+.content-list ul li h6
+{
+    font-size: 1.1rem;
+    font-family:'regular';
+    font-weight: 100;
+}
+.content-list ul li p
+{
+    font-family:'texttight';
+    font-size: 1rem;
+}
+.content-list ul li h6,p
+{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:900px) 
+{
+    .posttabs .tab-content
+    {
+        height: 100% !important;
+    }
+    .sidebar-content .posttabs
+    {
+        width: 100%;
+        height: 100%;
+    } 
+}
+@media screen and (max-width:700px) 
+{
+    .sidebar-content .category,.archive
+    {
+        width: 46%;
+        height: 100%;
+    }  
+    
+}

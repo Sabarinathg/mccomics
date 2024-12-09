@@ -1,0 +1,63 @@
+.pagenotfound-container
+{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.pnf-i-container
+{
+    position: relative;
+}
+.pnf-img
+{
+    width:300px;
+    height:300px;
+    z-index: 1;
+}
+.pnf-i-container span
+{
+    font-family: 'comickult';
+    font-size:3rem;
+    position: absolute;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    top:2.3rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+.pnf-content h1
+{
+    font-family: 'comickult';
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 15px black;
+}
+.pnf-content{
+    color: white;
+    font-family: 'texttight';
+    text-align: center;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px black;
+}
+.pnf-content ul{
+    margin: 0;
+}
+.pnf-content ul li{
+    list-style: none;
+}
+.pnf-content ul li a{
+    color: #e6a600;
+}
+@media screen and (max-width:600px) {
+    .pnf-content 
+    {
+        font-size: 1rem;
+    }
+}

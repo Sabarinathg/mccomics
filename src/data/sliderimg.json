@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "images":"../images/slider/mc slider 1.jpg"
+    },
+    {
+        "id":2,
+        "images":"../images/slider/mc slider 2.jpg"
+    },
+    {
+        "id":2,
+        "images":"../images/slider/mc slider 3.jpg"
+    },
+    {
+        "id":2,
+        "images":"../images/slider/mc slider 4.jpg"
+    }
+
+
+]

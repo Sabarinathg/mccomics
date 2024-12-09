@@ -1,0 +1,115 @@
+.reader-container {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'regular';
+    padding: 1rem;
+    background-image: url('../../images/content-page-curl.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50px;
+}
+
+.reader-content {
+    margin-bottom: 2rem;
+}
+
+.reader-content h3 {
+    font-size: 2rem;
+    font-family: 'comic';
+    color: #322d31;
+    margin: 10px;
+}
+
+.pdf-container {
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Adjust Swiper styles to fit inside pdf-container */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+    z-index: 999;
+    right: 0px;
+    width: 85%;
+    margin: 1rem;
+}
+
+.navigation-buttons button {
+    background-color: #322d31;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'regular';
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #555;
+}
+
+.error-container {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+@media screen and (max-width:780px) 
+{
+    .pdf-container {
+        background-color: white;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 2px black;
+    }
+    .navigation-buttons {
+        display: flex;
+        justify-content:space-between;
+        gap: 10px;
+        z-index: 999;
+        right: 0px;
+        width: 100%;
+        margin:1rem 0;
+    }
+}
