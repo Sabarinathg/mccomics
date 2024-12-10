@@ -63,6 +63,11 @@
 {
     display: none;
 }
+.sr-div
+{
+    background-color: red;
+    position: relative;
+}
 @media screen and (max-width:780px) 
 {
     .logo-c
@@ -100,52 +105,5 @@
         top:65px;
         right: 10px;
         display: flex;
-        background-color: rgba(0,0,0,0.8); /* Adjust background for dropdown */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width:60px;
-        overflow: hidden; /* Prevent content overflow during animation */
-        max-height: 0; /* Initially hidden */
-        height: auto;
-        transition: max-height 0.3s ease-out; /* Smooth dropdown effect */
-        border-radius: 8px; /* Optional: Add rounded corners */
-        z-index: 4;
     }
-    
-    /* Keyframes for the radial wipe */
-    @keyframes radialWipe {
-        0% {
-            clip-path: circle(0% at 100% 0); /* Start with a small circle at the top-right */
-        }
-        100% {
-            clip-path: circle(150% at 100% 0); /* Expand circle to reveal the whole element */
-        }
-    }
-    
-    /* Show .mg-bar with radial wipe effect */
-    .mg-bar.visible {
-        max-height: 500px; /* Adjust according to content height */
-    }
-    
-    .mg-bar .social-micon
-    {
-        display: flex;
-        flex-direction: column;
-        
-        padding: 0.5rem;
-        width: 100%;
-        margin:0 1rem;
-    }
-    .social-micon
-    {
-        position: relative;
-        transform: rotate(0);
-    }
-    .social-micon a .sm-icon
-    {
-        margin: 0.5rem 0;
-        transition: ease-in-out .2s;
-    }
-    
 }

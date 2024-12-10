@@ -53,7 +53,7 @@ const SearchResults = () => {
     <div className='searchresult-container'>
     <div className='sr-content'>
         <div className='sr-bar-head'>
-          <h1>Search result</h1>
+          <h1>Search results</h1>
           <div className='sr-bar'>
               <input
               type="text"

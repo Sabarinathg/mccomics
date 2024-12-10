@@ -37,21 +37,23 @@ const Searchbar = () => {
   return (
     <div className='sr-container'>
       <button id='sr-m-btn' onClick={openModal}>
-        <span>Search</span><i class="fa-brands fa-searchengin"></i>
+        <i class="fa-brands fa-searchengin"></i>
       </button>
       {modalOpen && (
         <div className="sr-modal-overlay" onClick={closeModal}>
           <div className="sr-modal" onClick={(e) => e.stopPropagation()}>
             <h2>Search Here</h2>
-            <input
-              type="text"
-              placeholder="Search Comics"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            <button id='sr-btn'onClick={handleSearchSubmit}>
-              <span>Search</span><i class="fa-brands fa-searchengin"></i>
-            </button>
+            <div className='sr-m-mv'>
+              <input
+                type="text"
+                placeholder="Search Comics"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+              <button id='sr-btn'onClick={handleSearchSubmit}>
+                <span>Search</span><i class="fa-brands fa-searchengin"></i>
+              </button>
+            </div>
             <button id='sr-close-btn' onClick={() => setModalOpen(false)}>
               <span>Close</span>
             </button>

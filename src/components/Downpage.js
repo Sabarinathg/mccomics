@@ -12,7 +12,7 @@ const Downpage = ({ book }) => {
       setTimeLeft((prevTime) => {
         if (prevTime <= 1) {
           clearInterval(countdown);
-          //triggerDownload();
+          triggerDownload();
           return 0;
         }
         return prevTime - 1;

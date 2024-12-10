@@ -12,7 +12,6 @@ import Backtotop from '../components/Backtotop.js';
 import Upcoming from '../components/Upcoming.js';
 import Hero from '../components/Hero.js';
 import Comingsoon from '../components/Comingsoon.js';
-import Searchbar from '../components/Searchbar.js';
 
 const Home = () => {
   const [isNavVisible, setNavVisible] = useState(false);
@@ -28,7 +27,6 @@ const Home = () => {
         <Navbar isNavVisible={isNavVisible} />
         <Banner />
         <Hero />
-        <Searchbar />
         <Comic />
         <Comingsoon />
         <Recent />

@@ -60,6 +60,7 @@
     background-color: #f3b000;
     font-size: 2rem;
     border-left: 2px solid black;
+    cursor: pointer;
 }
 .sr-contnet-con
 {
@@ -199,4 +200,23 @@
     font-family: 'comic';
     font-size: 2rem;
     cursor: pointer;
+}
+
+@media screen and (max-width:780px) 
+{
+    .sr-content h1
+    {
+        margin: 0.5rem 0;
+        font-family: 'comic';
+        font-size: 2rem;
+        color: black;
+        text-align: center;
+        padding:0 1rem;
+    }
+    .sr-bar
+    {
+        width: 100%;
+        margin: 1.5rem;
+        padding-left: 0.5rem;
+    }
 }
